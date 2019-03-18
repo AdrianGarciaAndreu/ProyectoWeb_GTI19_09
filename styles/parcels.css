@@ -1,0 +1,103 @@
+
+.contenedor-principal{
+    display: flex;
+    flex-direction: row;
+    max-height: 80%;
+    
+    flex: 0 1 0;
+
+    }
+
+
+
+.contenedor-lista-parcelas{
+    flex-direction: row;
+    width: 40%;
+    margin: 2rem;
+}
+
+.lista-parcelas-titulo{
+    background-color: rgb(57, 152, 116);
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    
+    border-radius: 5px;
+    width: 100%
+}
+
+.lista-parcelas{
+    width: 100%;
+    background-color: rgba(57, 152, 116,0.1);
+    height: 90%;
+    padding:5px;
+    padding-left: 10px;
+}
+
+.lista-elemento-head{
+    
+    display: flex;
+    padding: 5px;
+    background-color: rgb(7, 142, 131);
+    color:white;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    
+    justify-content: center;
+    margin-top: 1rem;
+    
+    cursor: pointer;
+    
+}
+
+
+
+.lista-elemento{
+    display: flex;
+    padding: 5px;
+    background-color: rgba(57, 152, 116,0.3);
+    
+    margin:5px;
+    justify-content: center;
+    cursor: pointer;
+    
+    
+    
+}
+
+
+.lista-elemento:hover{
+    background-color: rgba(124, 4, 30,0.9);
+    color:white;
+}
+
+
+.lista-elemento-selected{
+    background-color: rgb(71, 25, 25);
+    color:white;
+}
+
+
+.lista-elemento-no-seleccionable{
+    
+    display: flex;
+    padding: 5px;
+        
+    margin:5px;
+    justify-content: center;
+}
+
+
+
+.contenedor-mapa{
+    flex-direction: row;
+    width: 60%;
+    margin: 2rem;
+}
+
+.map {
+ height: 100%;
+ width: 100%;
+ }
