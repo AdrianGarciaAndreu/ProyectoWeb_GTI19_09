@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shirnk-to-fit=no">
     <link rel="shortcut icon" type="image/x-icon" href="Images/5156logoGTI.ico" />
     
-    <link rel="stylesheet" type="text/css" href="styles/estilos_principal.css" />
+    <link rel="stylesheet" type="text/css" href="css/estilos_principal.css" />
 
 </head>
 

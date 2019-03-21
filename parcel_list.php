@@ -10,12 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shirnk-to-fit=no">
     <link rel="shortcut icon" type="image/x-icon" href="Images/5156logoGTI.ico" />
     
-    <link rel="stylesheet" type="text/css" href="styles/estilos_principal.css" />
-    <link rel="stylesheet" type="text/css" href="styles/parcels.css" />
+    <link rel="stylesheet" type="text/css" href="css/estilos_principal.css" />
+    <link rel="stylesheet" type="text/css" href="css/parcels.css" />
     
     <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css" type="text/css">
-
-   <script src="scripts/security.js"></script> <!-- comrpueba que la sesión este iniciada -->
     
 </head>
 <body>
@@ -63,7 +61,7 @@
                 <?php
                     $sql2 = "SELECT * FROM parcelas WHERE IdFinca=".$row["IdFinca"];
                     $result2 = mysqli_query($conn, $sql2);
-                    echo "<div style='display:none;' id='lista-elementos_".$row["IdFinca"]."'>";
+                    echo "<div class='lista-contenedores-porFinca' style='display:none;' id='lista-elementos_".$row["IdFinca"]."'>";
                     if(mysqli_num_rows($result2)>0){
                         while($rs2 = mysqli_fetch_assoc($result2)){
                             
@@ -109,33 +107,13 @@
 </body>
 
 
-
-<!--
-
- <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
-
-<script src="scripts/ol/Map.js"></script>
-<script src="scripts/ol/View.js"></script>
-<script src="scripts/ol/format/GeoJSON.js"></script>
-<script src="scripts/ol/geom/MultiPoint.js"></script>
-<script src="scripts/ol/layer/Vector.js"></script>
-<script src="scripts/ol/source/Vector.js"></script>
-
-
-<script src="scripts/parcels.js"></script>
-<script>
-    loadMap(); AddPolygon();
-</script>
--->
-
+    <script src="js/security.js"></script> <!-- comrpueba que la sesión este iniciada -->
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmdAfLHqRsdHEuXXoA-q6xKXrS4nsk3aY&callback=loadMap"></script>
-    <script src="scripts/parcels.js"></script>
+    <script src="js/parcels.js"></script>
 
     <script>
-        loadMap(); //Carga el mapa
-        //AddPolygon();
-        
+        loadMap(); //Carga el mapa        
     </script>
 
 
