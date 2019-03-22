@@ -16,6 +16,9 @@
     margin: 2rem;
 }
 
+.contenedor-lista-parcelas-responsive{
+    display:none;
+}
 
 
 .lista-parcelas-titulo{
@@ -121,7 +124,23 @@
 
 /* Responsive Queries */
 @media (max-width: 650px) {
-  
+    
+    .contenedor-lista-parcelas{
+        display: none;
+    }
+    
+    .contenedor-lista-parcelas-responsive{
+        margin: 0px;
+        padding: 0;
+        width: 80%;        
+        margin: 1rem;
+        align-self: center;
+        
+        flex-direction: column;
+    }
+ 
+    
+    
       .contenedor-principal {
         flex-direction: column;
       }
@@ -138,18 +157,6 @@
         align-self: center;
         margin-left: 0px;
          
-    }
-    
-    
-    
-      .contenedor-lista-parcelas{
-        margin: 0px;
-        padding: 0;
-          
-        flex-direction: row;
-        width: 80%;        
-        margin: 1rem;
-        align-self: center;
     }
 
 
@@ -168,7 +175,11 @@
         font-size: 16px;
         padding: 5px;
     }
+
     
+     .contenedor-lista-parcelas-responsive{
+         display: block;
+    }
     
 }
 

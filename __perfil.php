@@ -37,35 +37,37 @@
 
          <div class="perfiles-header form">
 
-             <label for="formGroupExampleInput">Nombre</label>
-             <input type="text" class="form-control mb-2 mr-sm-2" id="perfiles_nombre" value="<?php echo $rs["Nombre"];?>">
+             <label for="recuperar_pass_form">Nombre</label>
+             <input type="text" class="form-control mb-2 mr-sm-2" id="perfiles_nombre" name="perfiles_Nombre" value="<?php echo $rs["Nombre"];?>">
          </div>
 
           <div class="form-group">
 
            <br>
-            <label for="formGroupExampleInput">Apellido 1</label>
-            <input type="text" class="form-control-sm" id="formGroupExampleInput" value="<?php echo $rs["Apellido1"];?>">
+            <input type="hidden" name="perfiles_Id" value="<?php echo $rs["Id"]; ?>">
+            
+            <label for="recuperar_pass_form">Apellido 1</label>
+            <input type="text" class="form-control-sm" name="perfiles_Apellido1" id="perfiles_Apellido1" value="<?php echo $rs["Apellido1"];?>">
 
-            <label for="formGroupExampleInput">Apellido 2</label>
-            <input type="text" class="form-control-sm" id="formGroupExampleInput" value="<?php echo $rs["Apellido2"];?>">
+            <label for="recuperar_pass_form">Apellido 2</label>
+            <input type="text" class="form-control-sm" name="perfiles_Apellido2" id="perfiles_Apellido2" value="<?php echo $rs["Apellido2"];?>">
             <br>
 
-            <label for="formGroupExampleInput">Contrase&ntilde;a</label>
-            <input type="password" class="form-control" id="formGroupExampleInput" value="<?php echo $rs["Pass"];?>">
+            <label for="recuperar_pass_form">Contrase&ntilde;a</label>
+            <input type="password" class="form-control" name="perfiles_Pass" id="perfiles_Pass" value="<?php echo $rs["Pass"];?>">
 
-            <label for="formGroupExampleInput">Correo</label>
-            <input type="email" class="form-control" id="formGroupExampleInput" value="<?php echo $rs["Correo"];?>"><br>
+            <label for="recuperar_pass_form">Correo</label>
+            <input type="email" class="form-control" name="perfiles_Correo" id="perfiles_Correo" value="<?php echo $rs["Correo"];?>"><br>
 
 
-            <label for="formGroupExampleInput">Tel&eacute;fono</label>
-            <input type="tel" class="form-control-sm" id="formGroupExampleInput" value="<?php echo $rs["Telefono"];?>">
+            <label for="recuperar_pass_form">Tel&eacute;fono</label>
+            <input type="tel" class="form-control-sm" name="perfiles_Telefono" id="perfiles_Telefono" value="<?php echo $rs["Telefono"];?>">
 
-            <label for="formGroupExampleInput">Provincia</label>
-            <input type="text" class="form-control-sm" id="formGroupExampleInput" value="<?php echo $rs["Provincia"];?>">
+            <label for="recuperar_pass_form">Provincia</label>
+            <input type="text" class="form-control-sm" name="perfiles_Provincia" id="perfiles_Provincia" value="<?php echo $rs["Provincia"];?>">
 
             <br><br>
-            <input class="form-control btn-danger" type="submit" value="Actualizar datos de perfil">
+            <input class="form-control btn-primary" type="submit" value="Actualizar datos de perfil">
 
           </div>
 
